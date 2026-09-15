@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
-
+#adding a comment
 with sqlite3.connect("../python_homework/db/lesson.db") as conn:
     query = """
         SELECT orders.order_id, SUM(products.price * line_items.quantity) AS total_price
